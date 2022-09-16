@@ -1,11 +1,27 @@
 package org.example;
 
-public class Main {
+import java.net.StandardSocketOptions;
+import java.util.Scanner;
+
+public class Application {
     public static void main(String[] args) {
+      Scanner scannerinput = new Scanner(System.in) ;
 
-        for (int i = 0; i < 5; i++) {
+        String val = "";
 
-            System.out.println("the value is: " +i);
-        }
+
+      do {
+          System.out.println ("  enter a proper string"
+          ) ;
+          val = scannerinput.next() ;
+
+      }
+        while (!"shriya".equalsIgnoreCase(val));
+
+
+        System.out.println ("val ochindi: " +val ) ;
     }
-}
+
+
+         
+    }    
